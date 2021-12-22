@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Menu Dinamico</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <h1>Dominican Bank</h1> <img src="logo de ahorro.svg">  <img src="logo de prestamos.svg">  <img src="logo de tarjetas.svg">
+    
+    <h3>Banco que cuida tu dinero</h3><br>
+
+    <details>
+        <summary>Tasa de cambio actual</summary>
+      <table>
+        <tr>
+      <th>Moneda</th> <th>Compra</th> <th>Venta</th>
+        </tr>
+        <tr>
+          <td>Dollar</td> <td>55.20</td> <td>56.85</td> 
+        </tr>
+        <tr>
+          <td>Euro</td> <td>63.00</td> <td>68.00</td>
+        </tr>
+      </table>
+      </details>
+
+      
+<header>
+  <nav>
+  <ul class="nav">
+  </ul>
+</nav>
+</header>
+
+
+<h1>Bienvenido al Banco!!!</h1><br>
+
+<p id="welcome">Con nuestras soluciones financieras puedes amueblar tu casa como prefieras
+Equipa y decora tu casa como lo deseas, con las facilidades de los
+productos financieros que tenemos para ti!</p>
+<br><br>
+
+<div><b style="font-size: larger; color: navy;">Más  información:</b>
+	<p id="information">* Para amueblar tu casa, puedes pagar todo lo que necesitas de forma rápida y segura con las Tarjetas Dominican Bank.</p><br>
+	<p id="information">* Con los Préstamos de Consumo puedes cubrir tus necesidades de efectivo para adquirir los muebles y
+	electrodomésticos que deseas para tu hogar.</p><br>
+	<p id="information"> * ¡Asegurar tu hogar es importante para ti! Vivienda Segura te ofrece respaldo ante cualquier imprevisto que ponga en riesgo 
+	tu casa, premitiéndote seleccionar el nivel de cobertura que se ajusta a tus necesidades.</p><br>
+</div>
+<br><br>
+
+<footer>
+    <h1 style="color:lightgray; font-size: larger;">Contactos</h1><br>
+	    <a href="tel:8098430095" id="piePagina">Teléfono</a><br>
+		<a href="https://www.google.com/maps/place"  id="piePagina">Ubicacion</a><br>	
+		<a href="mailto: contacto@bank.com"  id="piePagina">Correo electronico</a><br>
+		<a href="https://www.instagram.com"  id="piePagina">Instragram</a><br>
+		<a href="https://www.facebook.com"  id="piePagina">Facebook</a><br>
+        <hr>
+ <small style="color:skyblue; font-weight:lighter;"> Copyright 2021 Dominican Bank. Todos los derechos reservados.</small><br><br>
+</footer>
+
+
+<style>
+
+h1, h3{
+
+    font-family: sans-serif;
+    color:rgb(188, 195, 218);
+    text-shadow: 4px 4px 6px rgb(83, 96, 100);
+    font-weight:bold;
+    
+}
+
+#information{
+    color:black;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+div{
+    background-color:rgb(233, 241, 248);
+    font-size: medium;
+}
+
+img{
+  width:50px;
+  height:50px;
+}
+
+p{
+ color:white;
+ font-family:sans-serif;
+ font-weight:lighter;
+ font-size: large;
+
+}
+
+details{
+text-align:left;
+font-size:18px;
+font-weight:large;
+font-family:Georgia, 'Times New Roman', Times, serif;
+background: rgb(210, 232, 240);
+border: 1px solid rgb(168, 135, 135);
+border-radius: 4px;
+padding: .5em .5em 0;
+
+}
+
+summary{
+color:#00008B;
+font-size:20px;
+font-weight: 900;
+}
+
+footer{
+ 
+  text-align:center;
+  background-color:midnightblue;
+  
+}
+
+a{
+ text-decoration:none;   
+ color:skyblue;
+ text-decoration:none;
+ font-size: 18px;
+ font-size:large;
+ transition: opacity 1.5s;
+
+}
+
+a:hover{
+ color: #bd1111;
+ background:rgba(240, 237, 237, 0.904);
+ transition: all .3s;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+    
+ background-color:rgb(26, 83, 131);
+ }
+
+ header{
+	width: 75%;
+}
+
+nav{
+width: 880px;
+margin: 50px auto;
+background:black;
+margin-top: 30px;
+line-height: 50px; 
+
+}
+
+ul, li {
+	list-style:none;
+  justify-content:center;
+}
+
+.nav ,  li {
+padding:0px 20px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-decoration: none;
+position: relative;
+display: inline-block;
+border-right:0px solid #fff;
+color:white;
+font-size: 18px;
+font-weight:lighter;
+}
+			
+.nav li ul{
+display:none;
+position:absolute;
+min-width:180px;
+line-height: 50px; 
+}
+
+header .nav li:hover{
+
+    background:rgb(248, 250, 252);
+    color:rgb(255, 0, 0);
+    cursor:pointer;
+}
+
+
+.subNav{
+	position:absolute;
+	background: #1212da;
+  nav-down: auto;
+  font-size: 10px;
+	width: 50%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+  line-height: 50px; 
+  right: -30%;
+}
+
+
+.nav li:hover > ul {
+display:block;
+position: absolute;
+color: #fffefd;
+background:rgb(36, 33, 33);
+transition: all .3s;
+padding:20px,;
+text-decoration: none;
+font-size: 16px;
+font-weight:lighter;
+
+}
+
+.nav li:hover .subNav{
+	visibility: visible;
+	opacity: 1;
+}
+ 
+ 
+</style>
+
+<script src="crearMenuDinamico.js"></script>
+</body>
+</html>
+
+
